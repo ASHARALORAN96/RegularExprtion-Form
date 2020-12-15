@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <form name="regxForm" action="">
+        <Label>User Login Form manege by Regular exprtion</Label>
+        <input class="regx" type="text" name="username" placeholder="user name">
+        <p>Username must be  and contain 5 - 12 characters</p>
+        <input class="regx" type="text" name="email" placeholder="email">
+        <p>Email must be a valid address, e.g. me@mydomain.com</p>
+        <input id="inputPassword"  class="regx" type="password" name="password" placeholder="password">
+        <p>Password must started with capital letter and alphanumeric includ @,_,-, numbers and be (8-20) characters</p>
+        <input id="inputConfirmPassword" type="password" name="confirmPassword" placeholder="confirm password">
+        <p id="confirmpasswordP">The password doesn't match the previos password</p>
+        <input class="regx" type="number"name="mobilePhone" placeholder="mobile phone 07xxxxxxxx">
+        <p>mobile phone must be a valid number in Jordan (07xxxxxxxx) with 10 numbers</p>
+        <input class="regx" type="text" name="description" placeholder="profile description">
+        <p>description must contain only lowercase letters, numbers and hyphens and be 8 - 20 characters</p>
+    </form>
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

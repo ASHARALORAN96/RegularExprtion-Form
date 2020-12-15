@@ -1,0 +1,49 @@
+input {
+    display: block;
+    margin:  .8vw auto ;
+    padding: .5vw;
+    width: 25vw;
+    outline: none;
+
+}
+input:hover{
+    cursor: pointer;
+}
+
+form{
+    margin: 4vw auto ;
+    width: 50vw;
+    text-align: center;
+}
+label{
+    margin: 2vw auto;
+    font-size: 20px;
+    
+}
+p{
+    font-size: 12px;
+    color: gray;
+    display: none;
+}
+
+input.valid{
+    border-color: green;
+}
+input.invalid{
+    border-color: red;
+}
+
+input.invalid + p {
+    display: block;
+}
+
+/* #confirmpasswordP{
+    display: none;
+} */
+.confirmpasswordP{
+    display: block ;
+}
+input +p.confirmpasswordP {
+    border-color: red;
+
+}
